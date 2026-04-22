@@ -6,6 +6,10 @@ import { useAuthStore } from './store/authStore';
 import Landing from './pages/Landing';
 import Login from './pages/Login';
 import Register from './pages/Register';
+import AboutUs from './pages/AboutUs';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
+import ContactSupport from './pages/ContactSupport';
 import DashboardLayout from './components/layout/DashboardLayout';
 
 import StudentDashboard from './pages/student/Dashboard';
@@ -67,6 +71,10 @@ function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/contact" element={<ContactSupport />} />
 
         {/* Protected Student Routes */}
         <Route path="/student/*" element={
